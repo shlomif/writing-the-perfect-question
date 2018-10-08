@@ -17,5 +17,8 @@ $(XHTML): $(SRC)
 
 pdf:
 
+clean:
+	rm -f $(XHTML)
+
 # vim:ft=make
 #
