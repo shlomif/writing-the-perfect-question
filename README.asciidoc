@@ -1,3 +1,9 @@
+Writing the Perfect Question
+============================
+Jon Skeet https://codeblog.jonskeet.uk/
+:Date: 2018-10-08
+:Revision: $Id$
+
 *Please note: this blog post is _not_ a suitable place to post a
 development question.* You should probably be doing that on
 http://stackoverflow.com/[Stack Overflow] – after reading this post, of
