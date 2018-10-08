@@ -373,3 +373,11 @@ or generally gone off track, let me know either in the comments here or
 mail me (skeet@pobox.com). If this document ends up elsewhere, then that
 copy may end up being the “canonical” one which is edited over time – in
 which case I’ll indicate that here.
+
+[id="copyright"]
+Copyright and License
+---------------------
+
+Originally published here: https://codeblog.jonskeet.uk/2010/08/29/writing-the-perfect-question/ ,
+written and Copyright by https://codeblog.jonskeet.uk/[Jon Skeet], 2010
+under https://creativecommons.org/licenses/by/4.0/[CC-BY 4.0].
