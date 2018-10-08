@@ -37,9 +37,9 @@ http://catb.org/esr/faqs/smart-questions.html[How to Ask Questions the
 Smart Way] by Eric Raymond and Rick Moen is a perennial favourite.
 Still, I think I can bring something to the table.
 
-[[golden-rule]]The Golden Rule: Imagine You’re Trying To Answer The
-Question
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[id="golden-rule"]
+The Golden Rule: Imagine You’re Trying To Answer The Question
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you don’t remember anything else from this post, remember this bit.
 Everything else follows from here. (And yes, this does smack somewhat of
@@ -59,14 +59,15 @@ think, “If I only knew the answer to the question, it would be a
 pleasure to provide that answer.” At that point, post and wait for the
 answers to come rolling in.
 
-_____________________________________________________________________________________________________________________________________________________________________________________________________
+______________________________________________________________________
 Obviously this is somewhat easier to do if you have a certain amount of
 experience answering questions, particularly on the forum where you’re
 about to post. So, what should you be looking out for?
-_____________________________________________________________________________________________________________________________________________________________________________________________________
+______________________________________________________________________
 
-[[title]]Question title
-~~~~~~~~~~~~~~~~~~~~~~~
+[id="title"]
+Question title
+~~~~~~~~~~~~~~
 
 When a reader first sees your question, they’re likely to be scrolling
 down a list of snippets. The most eye-catching part of the snippet will
@@ -101,8 +102,9 @@ doesn’t this work?” makes absolutely _no_ sense without the rest of the
 question. Likewise a “question” title of “Please help” is unlikely to do
 well.
 
-[[context]]Context
-~~~~~~~~~~~~~~~~~~
+[[context]]
+Context
+~~~~~~~
 
 In most cases, anyone answering the question will need to know what
 language and platform you’re using. The basics should usually be
@@ -142,8 +144,9 @@ auto-suggested and look at samples for each one. If that sounds like a
 lot of work, just remember how much time you may be able to save
 yourself in the long run. It gets easier over time, of course.
 
-[[problem-statement]]Problem statement
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[[problem-statement]]
+Problem statement
+~~~~~~~~~~~~~~~~~
 
 Make sure it’s obvious what you’re trying to get out of the question.
 Too many “questions” are actually just statements: when I do X,
@@ -170,8 +173,9 @@ problem statement, we can suggest better designs. It’s fine to specify
 how you’re currently trying to solve your bigger problem, of course –
 that’s likely to be necessary detail – but include the bigger goal too.
 
-[[code]]Sample code and data
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[[code]]
+Sample code and data
+~~~~~~~~~~~~~~~~~~~~
 
 I may be biased on this one. I’m a _huge_ believer in sample code, both
 for questions and answers… and I probably use it in an unconventional
@@ -230,8 +234,9 @@ a brief summary of the desired results may well make sense to someone
 who already knows what your app is trying to achieve, it may be
 gobbledygook to those trying to answer your question.
 
-[[presentation]]Spelling, grammar and formatting
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[[presentation]]
+Spelling, grammar and formatting
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 I know not everyone speaks English natively. My own command of
 non-English languages is lamentably poor – I’m incredibly lucky that my
@@ -301,8 +306,9 @@ Often experienced members of the site will recognise what’s going on and
 edit your question for you, but obviously it’s better if they don’t have
 to.
 
-[[impressions]]Making a good impression
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[[impressions]]
+Making a good impression
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 Leaving aside the main body of the question, there are a few simple ways
 to get the community “on your side” and therefore more likely to give
@@ -350,8 +356,9 @@ helpful or solves your problem, accept it by clicking on the tick mark
 by it. This gives extra credit to the person who provided that answer,
 as well as giving more information to future readers.
 
-[[conclusion]]Conclusion and feedback
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[[conclusion]]
+Conclusion and feedback
+~~~~~~~~~~~~~~~~~~~~~~~
 
 Stack Overflow is an amazing resource (along with other Q&A sites, of
 course). The idea that you can get a good answer to a wide range of
