@@ -26,7 +26,7 @@ $(PDF): $(DOCBOOK5)
 pdf: $(PDF)
 
 clean:
-	rm -f $(XHTML)
+	rm -f $(DOCBOOK5) $(PDF) $(XHTML)
 
 # vim:ft=make
 #
