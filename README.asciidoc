@@ -1,0 +1,362 @@
+*Please note: this blog post is _not_ a suitable place to post a
+development question.* You should probably be doing that on
+http://stackoverflow.com/[Stack Overflow] – after reading this post, of
+course. I’ve received a truly astonishing number of comments on this
+post which are basically misplaced questions. Such comments are simply
+marked as spam – they don’t belong here.
+
+TL;DR: If you don’t have time to read this post fully, I have a
+https://tinyurl.com/stack-checklist[checklist version]. I’d strongly
+encourage you to read this post fully though, when you have time.
+
+I’ve added a tinyurl to this post for easy reference: +
+http://tinyurl.com/stack-hints. Nice and easy to remember :)
+
+'''''
+
+A while ago, I wrote a
+https://codeblog.jonskeet.uk/2009/02/17/answering-technical-questions-helpfully[blog
+entry] on how to _answer_ questions helpfully on sites like
+http://stackoverflow.com/[Stack Overflow]. Recently I saw
+http://meta.stackoverflow.com/questions/59991[a meta question about bad
+questions] and thought it would be worth following up with another blog
+post on _asking_ questions. For the sake of convenience – and as Stack
+Overflow is so popular – I will assume the question is going to be asked
+on Stack Overflow or a similar Stack Exchange site. Most of the post
+doesn’t actually depend on that, but if you’re asking elsewhere you may
+need to tweak the advice a little.
+
+There are plenty of similar resources around, of course – in particular,
+http://catb.org/esr/faqs/smart-questions.html[How to Ask Questions the
+Smart Way] by Eric Raymond and Rick Moen is a perennial favourite.
+Still, I think I can bring something to the table.
+
+[[golden-rule]]The Golden Rule: Imagine You’re Trying To Answer The
+Question
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you don’t remember anything else from this post, remember this bit.
+Everything else follows from here. (And yes, this does smack somewhat of
+http://www.biblegateway.com/passage/?search=Matthew+7:12&version=NIV[Matthew
+7:12].)
+
+Once you’ve finished writing your question, read it through. Imagine you
+were coming to it fresh, with no context other than what’s on the
+screen. Does it make sense? Is it clear what’s being asked? Is it easy
+to read and understand? Are there any obvious areas you’d need to ask
+about before providing an answer? You can _usually_ do this pretty well
+however stuck you are on the actual question. Just apply common sense.
+If there’s anything wrong with the question when _you’re_ reading it,
+obviously that will be a problem for whoever’s actually trying to answer
+it. So fix the problems. Improve the question until you can read it and
+think, “If I only knew the answer to the question, it would be a
+pleasure to provide that answer.” At that point, post and wait for the
+answers to come rolling in.
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________
+Obviously this is somewhat easier to do if you have a certain amount of
+experience answering questions, particularly on the forum where you’re
+about to post. So, what should you be looking out for?
+_____________________________________________________________________________________________________________________________________________________________________________________________________
+
+[[title]]Question title
+~~~~~~~~~~~~~~~~~~~~~~~
+
+When a reader first sees your question, they’re likely to be scrolling
+down a list of snippets. The most eye-catching part of the snippet will
+be the title – so use that text wisely. While you _can_ include language
+or platform information, you should only do so naturally – not as a sort
+of “header”. For example, this is bad:
+
+___________________________
+Java: Why are bytes signed?
+___________________________
+
+But this is okay:
+
+_____________________________
+Why are bytes signed in Java?
+_____________________________
+
+Of course, you should _also_ include this information in tags, as it
+will help people who pay particular attention to specific tags.
+
+Ideally, a question title should be a question – but frankly that’s not
+always feasible. I would recommend favouring a short, descriptive title
+which captures the theme of the question without actually _being_ a
+question instead of really trying to crowbar it into the form of a
+question when it really doesn’t want to be. That’s not an excuse for
+laziness though – it’s _usually_ possible to come up with a good title
+which is genuinely a question.
+
+It’s important that the question title is _specific_ though, and has at
+least some meaning with no other information. A question such as “Why
+doesn’t this work?” makes absolutely _no_ sense without the rest of the
+question. Likewise a “question” title of “Please help” is unlikely to do
+well.
+
+[[context]]Context
+~~~~~~~~~~~~~~~~~~
+
+In most cases, anyone answering the question will need to know what
+language and platform you’re using. The basics should usually be
+communicated through tags, but it may very well be worth providing more
+information:
+
+* Language version (e.g. C# 4)
+* Platform version (e.g. .NET 3.5; note that this isn’t always implicit
+from the language version, or vice versa)
+* Operating system, if it could be relevant (e.g. particular permissions
+issues)
+* Any other relevant software (e.g. database type and version, the IDE
+you’re using, web server you’re connecting to)
+* Any other constraints. This is particularly important. It’s _really
+annoying_ to give a perfectly good answer to a question, only to be told
+that you’re not allowed to use feature X or Y which provide the obvious
+solution.
+** If you have unusual constraints, it’s worth explaining why. Not only
+does this answer the obvious follow-up comment, but it also gives more
+information about what _other_ solutions may not be applicable.
+
+Describe what you’ve already tried and the results of any research. (You
+_have_ searched for a solution to your problem before asking it, haven’t
+you? Stack Overflow isn’t meant to replace basic search skills.) Often
+there will be other people in a similar situation, but the answers
+didn’t quite match your situation. Just like the above point about
+unusual constraints, it saves time if you can point out differences
+between your situation and other common ones. It’s even worth referring
+to other related questions explicitly – particularly if they’re on the
+same forum. Aside from anything else, this shows a certain amount of
+“due diligence” – people are generally more willing to help you if can
+show you’ve already put some effort in.
+
+You should absolutely make sure that you tag the question appropriately.
+If you’re not sure which exact tags are appropriate, see what gets
+auto-suggested and look at samples for each one. If that sounds like a
+lot of work, just remember how much time you may be able to save
+yourself in the long run. It gets easier over time, of course.
+
+[[problem-statement]]Problem statement
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Make sure it’s obvious what you’re trying to get out of the question.
+Too many “questions” are actually just statements: when I do X,
+something goes wrong.
+
+Well, what did you expect it to do? What are you trying to accomplish?
+What have you already tried? What happened in those attempts? Be
+detailed: in particular, if something didn’t work, don’t just state
+that: tell us _how_ it failed. If it threw an exception, what was the
+exception? (Don’t just give the type – give the error message and say
+which line threw it. If there’s a nested exception, post that too.)
+
+If at all possible, write a sort of “executive summary” at the start of
+your question, followed by a more detailed description. Remember that on
+the list of questions, the first few sentences will appear as a snippet.
+If you can get a sense of the question across in that snippet, you’re
+more likely to attract views from people who can answer the question.
+
+One trap that many posters fall into is to ask how to achieve some
+“small” aim, but never say what the larger aim is. Often the smaller aim
+is either impossible or rarely a good idea – instead, a different
+approach is needed. Again, if you provide more context when writing your
+problem statement, we can suggest better designs. It’s fine to specify
+how you’re currently trying to solve your bigger problem, of course –
+that’s likely to be necessary detail – but include the bigger goal too.
+
+[[code]]Sample code and data
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+I may be biased on this one. I’m a _huge_ believer in sample code, both
+for questions and answers… and I probably use it in an unconventional
+way. I usually paste it into a text editor, and try to compile it from
+the command line. If that’s not likely to work (and the problem isn’t
+obvious by inspection), I’m unlikely to bother too much with it. Firing
+up Eclipse or Visual Studio and finding an existing project I don’t care
+about or starting a new one is going to take much more time.
+
+That means if you want _me_ to look at code, it should:
+
+* Be standalone. Don’t try to talk to a database unless you really have
+to. (Obviously for database questions, that’s kinda hard :) If you use
+sample XML, provide a short but _complete_ XML file for us to reproduce
+the issue with. (And the same for other file types, obviously.)
+* Be complete. If there are missing imports or using directives, that’s
+really annoying
+* Actually compile (unless the compilation error is the reason for the
+question). Don’t give me code which is “something like” the real code
+but which clearly _isn’t_ the real code, and may well not exhibit the
+same symptoms by the time I’ve fixed it so that it compiles.
+* Ideally not bring up a UI. Unless your code is _about_ a UI issue,
+don’t bring one up. Console apps are simpler, and simplicity is a huge
+benefit when trying to hunt down a problem.
+* Demonstrate the problem. You should be able to say, “I expected the
+result to be X, it’s actually Y.” (You should actually say that too, so
+that we can check that we get the same results.)
+* Be as short as possible. If I have to wade through hundreds of lines
+of code to find the problem, I’m doing work that _you_ should be doing.
+Often if you work hard to reduce the problem to a short but complete
+program, you’ll find the issue yourself. You can absolutely do this
+without knowing what the problem is; you should be looking to the
+community for their expertise, not their willingness to spend time on
+your problem doing the work that you can do yourself.
+
+Yes, this is a relatively onerous list. It doesn’t all apply to every
+problem, but it _does_ apply in a great many situations. While I get put
+off by reams of irrelevant, badly formatted code, some of which clearly
+won’t compile, the inverse is true as well: if I can tell by looking at
+the question that the code can go through a copy/paste/compile/run cycle
+really quickly, I’m _much_ more likely to pay the question significant
+attention.
+
+In data-oriented questions, it’s very often helpful to give some sample
+data. Cut out anything irrelevant (if your real table has 50 columns,
+you only need to include relevant ones) but make sure that you give
+enough sample input for it to be meaningful. For example, if you’re
+trying to group some data by a PersonID column, it’s pretty useless if
+there’s only one PersonID given, or if each PersonID only appears once.
+If you _are_ giving examples of expected input and corresponding output,
+make sure it’s clear _why_ that’s the expected output. Often I see
+questions which give a small number of samples, and there are various
+ways they could be interpreted. This is one area where it’s particularly
+important to reread the question from a stranger’s point of view: while
+a brief summary of the desired results may well make sense to someone
+who already knows what your app is trying to achieve, it may be
+gobbledygook to those trying to answer your question.
+
+[[presentation]]Spelling, grammar and formatting
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+I know not everyone speaks English natively. My own command of
+non-English languages is lamentably poor – I’m incredibly lucky that my
+native tongue happens to be the lingua franca of the technical world.
+However, if you’re trying to communicate on an English-language forum,
+you owe it to yourself to make an effort to write at least _reasonably_
+correct English.
+
+* Please use capital letters where appropriate. It really can make a big
+difference in the readability of text.
+* Please split your text into paragraphs. Imagine this blog post as one
+big paragraph – it would be almost impossible to read.
+* Please write actual words. There are undoubtedly some abbreviations
+which are acceptable to most readers – IMO, IIRC etc –  there’s no
+reason to switch into text-speak with “gr8”, “bcoz”, “u” and so forth.
+It’s unlikely that you’re _actually_ writing your question on a phone
+with only a primitive keyboard; show your readers respect by writing
+properly. It may take you a few more seconds, but if it means you get an
+answer quicker, it’s surely worth the extra effort.
+* Most browsers have built-in spelling checkers these days, or at least
+have plug-ins or extensions available to check your text. Technical text
+often creates a lot of false positives for checkers, but if your
+spelling isn’t generally great, it’s worth looking at the suggestions.
+
+Having said all of this, you’re not trying to create a literary
+masterpiece. You’re trying to communicate your question as effectively
+as possible. If you’re faced with the choice between an unambiguous but
+ugly sentence, or a phrase which stirs the soul but leaves the reader
+confused about exactly what you mean, go for the unambiguous option
+every time.
+
+One way a huge number of questions can be improved with very little
+effort is simply formatting them properly. Stack Overflow’s markdown
+editor is very good – the preview below your input box is almost always
+accurate in terms of the eventual result, and you can always edit the
+question later if anything doesn’t quite work. The exact details of the
+markdown is beyond the scope of this article – Stack Overflow has a
+http://stackoverflow.com/editing-help[detailed guide] though – if you’re
+new to the site, I’d recommend you at least skim through it.
+
+By far the most important kind of formatting is making code look like
+code. Within a text paragraph, simply surround the code with backticks
+`\`like this\``. For blocks of code, just indent everything by four
+spaces. If you’re cutting and pasting code, it may already be indented
+(for example if you’re copying code within a class) but if not, the
+easiest way to indent everything is to paste it, select the whole code
+block, and then press Ctrl-K or the “\{ }” button just above the editor.
+
+One of the important things about code formatting is that it means angle
+brackets (and some other symbols) are preserved instead of being
+swallowed by the markdown formatter. In some cases this can mean all the
+difference between a question which is easy to answer and one which
+doesn’t make any sense, particularly in terms of generics in Java and C#
+or templates in C++. For example, like this
+
+_______________________________________________________________________
+Why can’t I convert an expression of type List<string> to List<object>?
+_______________________________________________________________________
+
+makes no sense at all if the type arguments are removed:
+
+_______________________________________________________
+Why can’t I convert an expression of type List to List?
+_______________________________________________________
+
+Often experienced members of the site will recognise what’s going on and
+edit your question for you, but obviously it’s better if they don’t have
+to.
+
+[[impressions]]Making a good impression
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Leaving aside the main body of the question, there are a few simple ways
+to get the community “on your side” and therefore more likely to give
+you a useful answer quickly.
+
+* Register as a user and give yourself a meaningful name. It doesn’t
+have to be your real name, but frankly names like “Top Coder” or “Coding
+Guru” look pretty silly when you’re asking a question which others find
+simple. That’s still better than leaving yourself as “user154232” or
+whatever identifier is assigned to you by default though. Aside from
+anything else, it shows a certain amount of commitment to the question
+and/or site: if you’ve bothered to give yourself a name, you’re less
+likely to be an “ask-and-run” questioner.
+* Keep an eye on your question. There may well be requests for
+clarification – and of course, answers! If you receive an answer which
+wasn’t quite what you were looking for, explain carefully (and politely)
+why it’s not suitable for your purposes. Consider going back and editing
+your question to make it clearer for subsequent users.
+* Don’t add your own answer unless it really _is_ an answer. Often users
+add extra details in an “answer” when they should really have just
+edited their question. Likewise editing your question is generally a
+better idea than adding a long comment to an existing answer –
+particularly if that comment contains a block of code (which won’t work
+well in a comment). If you do change the question in response to an
+answer though, it’s worth adding a comment to the answer just to let the
+user know that you’ve updated it though… you may well find they quickly
+edit their answer to match the revised question.
+* There’s no need to include greetings and sign-offs such as “Hi
+everyone!” and “Thanks – hope to get an answer soon” in the question.
+These will often be edited out by other users, as they’re basically a
+distraction. Greetings at the start of a question are particularly
+useless as they can take up valuable space in the snippet displayed in
+the question list.
+* Above all, be polite. Remember that no-one is getting paid to answer
+your question. Users are giving up their time to help you – so please be
+appreciative of that. If you’re asking a homework question, explain why
+you’re asking for help with something that traditionally you’d have to
+answer all by yourself. If a user suggests that your general approach is
+wrong and that there’s a better way of doing things, don’t take it
+personally: they’re trying to help you improve your code. By all means
+disagree robustly, but don’t start into ad hominem arguments. (This
+advice applies to answerers as well, of course.)
+* (Somewhat specific to Stack Overflow.) If an answer is particularly
+helpful or solves your problem, accept it by clicking on the tick mark
+by it. This gives extra credit to the person who provided that answer,
+as well as giving more information to future readers.
+
+[[conclusion]]Conclusion and feedback
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Stack Overflow is an amazing resource (along with other Q&A sites, of
+course). The idea that you can get a good answer to a wide range of
+questions within _minutes_ is pretty staggering… but there’s an obvious
+correlation between the quality of a question and the likelihood that
+you’ll get quick, helpful answers. Put that extra bit of effort in
+yourself, and it will probably pay for itself very quickly.
+
+I’m hoping to keep this blog post up to date with suggestions received –
+if I’ve missed out anything, over- or under-emphasized a specific point,
+or generally gone off track, let me know either in the comments here or
+mail me (skeet@pobox.com). If this document ends up elsewhere, then that
+copy may end up being the “canonical” one which is edited over time – in
+which case I’ll indicate that here.
