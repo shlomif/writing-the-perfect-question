@@ -8,6 +8,8 @@ all: html pdf
 SRC = README.asciidoc
 OUT_base = writing-the-perfect-question
 
+DOCBOOK5 = $(OUT_base).docbook5.xml
+PDF = $(OUT_base).pdf
 XHTML = $(OUT_base).xhtml
 
 html: $(XHTML)
@@ -15,7 +17,13 @@ html: $(XHTML)
 $(XHTML): $(SRC)
 	asciidoctor --backend=xhtml5 -o $@ $<
 
-pdf:
+$(DOCBOOK5): $(SRC)
+	asciidoctor --backend=docbook5 -o $@ $<
+
+$(PDF): $(DOCBOOK5)
+	docmake -o $@ pdf $<
+
+pdf: $(PDF)
 
 clean:
 	rm -f $(XHTML)
