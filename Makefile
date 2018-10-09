@@ -3,16 +3,23 @@
 # Shlomi Fish, 2018-10-08 16:55
 #
 
-all: html pdf
+all: epub html pdf
 
 SRC = README.asciidoc
 OUT_base = writing-the-perfect-question
 
+DOCBOOK5_XSL_STYLESHEETS_PATH := /usr/share/sgml/docbook/xsl-ns-stylesheets
+EPUB_SCRIPT = $(DOCBOOK5_XSL_STYLESHEETS_PATH)/epub/bin/dbtoepub
+DBTOEPUB = ruby $(EPUB_SCRIPT)
+EPUB = $(OUT_base).epub
 DOCBOOK5 = $(OUT_base).docbook5.xml
 PDF = $(OUT_base).pdf
 XHTML = $(OUT_base).xhtml
 
 html: $(XHTML)
+
+$(EPUB): $(DOCBOOK5)
+	$(DBTOEPUB) -o $@ $<
 
 $(XHTML): $(SRC)
 	asciidoctor --backend=xhtml5 -o $@ $<
@@ -22,6 +29,8 @@ $(DOCBOOK5): $(SRC)
 
 $(PDF): $(DOCBOOK5)
 	docmake -o $@ pdf $<
+
+epub: $(EPUB)
 
 pdf: $(PDF)
 
