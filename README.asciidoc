@@ -381,3 +381,10 @@ Copyright and License
 Originally published here: https://codeblog.jonskeet.uk/2010/08/29/writing-the-perfect-question/ ,
 written and Copyright by https://codeblog.jonskeet.uk/[Jon Skeet], 2010
 under https://creativecommons.org/licenses/by/4.0/[CC-BY 4.0].
+
+[id="see-also"]
+See Also (added by GitHub contributors)
+---------------------------------------
+
+* https://github.com/shlomif/how-to-share-code-online[How to share code online]
+* https://github.com/shlomif/Freenode-programming-channel-FAQ[The Freenode ##programming FAQ]
